@@ -1,4 +1,7 @@
-Terraform script that creates Windows instances in AWS and configures it using ansible.
+Terraform script that creates Windows instances in AWS and configures it using ansible. To configure multiple instances, change the count value in the variable file.
+
+The script creates a subnet in each availability zone and then splits the instances across different subnets. It will create a subnet in each AZ regardless of the instance count. Please edit the code for subnet section if you wish to deploy a single subnet.
+
 To run this script, the following requirements must be met:
 1. The machine running the script must have ansible engine installed
 2. AWS CLI installed and authenticated using an account with correct privileges
