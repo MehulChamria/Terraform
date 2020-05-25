@@ -1,0 +1,26 @@
+---
+- name: Playbook for installing essential applications on Windows target using Chocolatey
+  hosts: AWS
+  gather_facts: false
+  tasks:
+  - name: Install Google Chrome
+    win_chocolatey:
+      name: googlechrome
+      state: present
+  - name: Install Cutepdf, Notepad++, Git and 7zip
+    win_chocolatey:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - cutepdf
+    - notepadplusplus
+    - git
+    - 7zip
+  - name: Install Putty, Filezilla, Atom editor and TreeSizeFree
+    win_chocolatey:
+      name:
+        - putty
+        - filezilla
+        - atom
+        - treesizefree
+      state: present

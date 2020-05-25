@@ -1,0 +1,9 @@
+---
+- name: Playbook for installing essential applications on Windows target using Chocolatey
+  hosts: AWS
+  gather_facts: false
+  tasks:
+  - name: Install Google Chrome
+    win_chocolatey:
+      name: googlechrome
+      state: present
