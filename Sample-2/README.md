@@ -14,4 +14,4 @@ To run this script, the following requirements must be met:
 
 To summarize, the script will deploy the following:
 
-![](./Images/AWS_Sample_2.PNG)
+![AWS_Sample_2 Solution](./Images/AWS_Sample_2.PNG)
