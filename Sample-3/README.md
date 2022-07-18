@@ -5,7 +5,7 @@ The script deploys a domain controller and then creates and adds 3 windows insta
 I have split the code in different files for easier readability.
 
 To run this script, the following requirements must be met:
-1. AWS CLI installed and authenticated using an account with correct privileges
+1. Azure CLI installed and authenticated using an account with correct privileges
 2. This script was tested using the following version:
     Terraform v0.13.0
     Provider.azurerm v2.99
