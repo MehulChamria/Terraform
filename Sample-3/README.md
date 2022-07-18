@@ -21,5 +21,5 @@ To run the script:
 6. Run 'terraform apply' to apply the configuration and type 'Yes' when approval is requested
 
 To destroy the resources:
-1. Login to Azure to delete the Azure Recovery Services Vault manually as terraform times out trying to delete the Recovery Service Vault. Instructions to delete a vault can be found [here](https://docs.microsoft.com/en-us/azure/backup/backup-azure-delete-vault?tabs=portal).
-2. Once deleted, run 'terraform destroy' and type 'Yes' when approval is requsted
+1. Run 'terraform destroy' and type 'Yes' when approval is requested
+2. If terraform times out or fails to delete the Recovery Service Vault, login to azure to manaully delete the vault. Instructions to delete a vault can be found [here](https://docs.microsoft.com/en-us/azure/backup/backup-azure-delete-vault?tabs=portal). Once deleted, rerun the destroy command and terraform should be able to destroy the remaining resources, if any.

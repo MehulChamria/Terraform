@@ -4,6 +4,7 @@ resource "azurerm_recovery_services_vault" "AZ_RG1_ARSV1" {
   resource_group_name = azurerm_resource_group.AZ_RG1.name
   sku                 = "Standard"
   storage_mode_type   = "LocallyRedundant"
+  soft_delete_enabled = false
 }
 
 resource "azurerm_backup_policy_vm" "AZ_RG1_DVP1" {
